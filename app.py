@@ -79,7 +79,7 @@ if uploaded_file is not None:
                     st.info(f"**Target Table:** {full_table_path}")
                     
                     # Pre-fill the SQL editor with a basic query using the selected table
-                    default_query = f"SELECT * \nFROM {full_table_path} \nLIMIT 10"
+                    default_query = f"SELECT * \nFROM {full_table_path}"
                 else:
                     default_query = "SELECT * FROM `project.dataset.table` LIMIT 10"
 
